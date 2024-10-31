@@ -194,7 +194,7 @@ class FaceExtractor:
 
             for i in range(len(detections)):
                 # Crop the faces out of the original frame.
-                frameref_detections = self._add_margin_to_detections(detections[i], frame_size, 0.2)
+                frameref_detections = self._add_margin_to_detections(detections[i], frame_size, 0)
                 faces = self._crop_faces(frames[v][i], frameref_detections)
                 kpts = self._crop_kpts(frames[v][i], detections[i], 0.3)
 
