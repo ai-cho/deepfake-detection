@@ -194,7 +194,8 @@ class FaceExtractor:
 
             for i in range(len(detections)):
                 # Crop the faces out of the original frame.
-                frameref_detections = self._add_margin_to_detections(detections[i], frame_size, 0.2)
+                # no margin
+                frameref_detections = self._add_margin_to_detections(detections[i], frame_size, 0) 
                 faces = self._crop_faces(frames[v][i], frameref_detections)
                 kpts = self._crop_kpts(frames[v][i], detections[i], 0.3)
 
@@ -368,9 +369,9 @@ class FaceExtractor:
         """
         offset = torch.round(margin * (detections[:, 2] - detections[:, 0]))
         detections = detections.clone()
-        detections[:, 0] = torch.clamp(detections[:, 0] - offset * 2, min=0)  # ymin
+        detections[:, 0] = torch.clamp(detections[:, 0] + 10 - offset * 2, min=0)  # ymin
         detections[:, 1] = torch.clamp(detections[:, 1] - offset, min=0)  # xmin
-        detections[:, 2] = torch.clamp(detections[:, 2] + offset, max=frame_size[1])  # ymax
+        detections[:, 2] = torch.clamp(detections[:, 2] + 10 + offset, max=frame_size[1])  # ymax
         detections[:, 3] = torch.clamp(detections[:, 3] + offset, max=frame_size[0])  # xmax
         return detections
 
