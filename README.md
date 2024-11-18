@@ -13,12 +13,12 @@
 
 face manipulation (mainly from [icpr2020dfdc](https://github.com/polimi-ispl/icpr2020dfdc))
 * BlazeFace
-* EfficientNet
+* EfficientNet<br><br>
 
 voice manipulation
 * custom CNN (with MFCC)
 * [pyannote/speaker-diarization-3.1](https://huggingface.co/pyannote/speaker-diarization-3.1)
-* OpenAI Whishper
+* OpenAI Whishper<br><br>
 
 analyze maliciousness
 * ChatGPT
