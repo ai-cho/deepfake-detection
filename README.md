@@ -12,7 +12,7 @@
 
 ### Used Models
 
-face manipulation (mainly from 
+face manipulation (mainly from [icpr2020dfdc](https://github.com/polimi-ispl/icpr2020dfdc))
 * BlazeFace
 * EfficientNet
 
