@@ -5,10 +5,9 @@
 * analyzing its maliciousness
 
 ## Overview
-![image](https://github.com/user-attachments/assets/a6dbbac5-4d0b-4661-86c6-0e911b2eae05)
+![image](https://github.com/user-attachments/assets/34814f19-d0aa-4567-91a9-9de42b042c93)
 
-![image](https://github.com/user-attachments/assets/d7929126-eb1e-48d3-bd57-8c87a571d7a9)
-
+![image](https://github.com/user-attachments/assets/84738a18-0672-495a-9b21-23d032a16228)
 
 ### Used Models
 
